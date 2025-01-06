@@ -4,7 +4,8 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #f8f9fa;
+  flex-direction: column;
+  background-color: antiquewhite;
 }
 
 body {
@@ -25,9 +26,9 @@ body {
   flex-direction: column;
   width: 400px;
   height: 400px;
-  margin: 0 auto;
   border: 1px solid #333;
   background-color:hsl(160, 100%, 75%);
+  margin: 3% auto 5%;
 }
 
 .row {
@@ -46,4 +47,82 @@ body {
   background-color: hsl(160, 100%, 75%);
   font-size: 2rem;
   cursor: pointer;
+}
+
+.square:hover {
+  background-color: hsl(160, 100%, 90%);
+}
+
+.square:active {
+  background-color: hsl(160, 100%, 80%);
+}
+
+.winner-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.restart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  background-color: hsl(160, 100%, 75%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: hsl(160, 100%, 90%);
+}
+
+.restart-button:active {
+  background-color: hsl(160, 100%, 80%);
+}
+
+@media (max-width: 600px) {
+  .board {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .board {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  .board {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 200px) {
+  .board {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 150px) {
+  .board {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 100px) {
+  .board {
+    width: 50px;
+    height: 50px;
+  }
 }
