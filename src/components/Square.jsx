@@ -3,8 +3,13 @@ import PropTypes from 'prop-types'
 
 function Square({ value, chooseSquare }) {
     return (
-        <button className="square" onClick={chooseSquare} onKeyDown={(e) => { if (e.key === 'Enter') chooseSquare(); }}>
-            {value}
+        <button
+        className="square"
+        onClick={chooseSquare}
+        onKeyDown={(e) => { if (e.key === 'Enter') chooseSquare(); }}
+        aria-label={`Square with value ${value || 'empty'}`}
+        >
+        {value}
         </button>
     )
 }

@@ -126,3 +126,17 @@ body {
     height: 50px;
   }
 }
+
+/* Add your CSS styles here */
+.player-turn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.square.winning {
+  background-color: #ffeb3b;
+  font-weight: bold;
+}
